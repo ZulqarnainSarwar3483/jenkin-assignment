@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ZulqarnainSarwar3483/jenkin-assignment.git'
+               echo 'my-first-pipeline is buit'
             }
         }
         stage('Build') {
