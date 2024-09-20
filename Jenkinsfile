@@ -12,12 +12,5 @@ pipeline {
                 // No actual build is necessary for a static HTML page, but any pre-processing steps can be added here
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploy the HTML page'
-                // Example: Copy the HTML page to a specific folder on your server
-                sh 'cp -r * /var/www/html/'
-            }
-        }
     }
 }
